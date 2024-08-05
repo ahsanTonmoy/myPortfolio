@@ -1,0 +1,42 @@
+body{
+    font-family: "Russo One", sans-serif;
+
+}
+/*  */
+.sectionTitle{
+    font-family: "Sora", sans-serif;
+
+    
+
+}
+/*  */
+.wrepperArea>div {
+    padding: 4rem 0;
+}
+
+.wrepperArea>.bannar {
+    padding: 0 !important;
+}
+.Dark{
+    background-color: black;
+}
+.bgDark {
+    background-color: #0f0715;
+}
+
+.bgDarkBlue {
+    background-color: #2a1454;
+}
+
+
+/*  */
+
+.item .hoverCnt{
+    display: none;
+    
+}
+
+.item:hover .hoverCnt{
+    display: grid;transition: 20s;
+    
+}

@@ -1,0 +1,8 @@
+/*  */
+
+.social-icon a{
+    border-radius: 50%;
+    border: 1px solid #8750f7;
+    color: #8750f7;
+    padding: .7rem;
+}
