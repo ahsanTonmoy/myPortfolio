@@ -5,12 +5,18 @@ import './style.css'
 import MySkills from '@/components/ui/mySkills/MySkills';
 import RecentRork from '@/components/ui/recentWork/RecentRork';
 import MyProfile from '@/components/ui/myProfile/MyProfile';
+import Head from 'next/head';
+
+
+
 const HomePage = () => {
   return (
     <div className='wrepperArea'>
+    
       {/*  */}
       <div className='bannar'><Bannar /></div>
       {/*  */}
+      <div> </div>
       <div className='Dark'>
         <AboutMe></AboutMe>
       </div>
