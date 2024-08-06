@@ -16,20 +16,19 @@ const HomePage = () => {
       {/*  */}
       <div className='bannar'><Bannar /></div>
       {/*  */}
-      <div> </div>
-      <div className='Dark'>
+      <div className='bgDark'>
         <AboutMe></AboutMe>
       </div>
         
       {/*  */}
-      <div className='bgDark'>
+      <div className='Dark'>
         <MySkills></MySkills>
       </div>
 
       {/*  */}
-      <div className='Dark'><RecentRork></RecentRork></div>
+      <div className='bgDark'><RecentRork></RecentRork></div>
       {/*  */}
-      <div className='bgDark'>
+      <div className='Dark'>
         <MyProfile/>
       </div>
     </div>
