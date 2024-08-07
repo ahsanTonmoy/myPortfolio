@@ -14,7 +14,7 @@ const Myinfo = () => {
 
                     {/* content */}
                     <Box>
-                    Since beginning my journey as a web developer nearly 1 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+                    Since beginning my journey as a web developer nearly 1 years ago, I &apos;ve done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
                     </Box>
 
                     {/*  */}
