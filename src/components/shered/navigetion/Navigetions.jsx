@@ -11,7 +11,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Menu from '../menu/Menu';
-
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 
 const Navigetions = () => {
     const pathName = usePathname();
@@ -47,7 +47,7 @@ const Navigetions = () => {
                         <div className="brand flex gap-5">
                             <AdbIcon sx={{ display: { xs: '', md: 'flex' }, mr: 1, fontSize: '30px' }} />
 
-                            <div className="py-1"> ahosant82@gmail.com</div>
+                            <div className="py-1 hidden md:block"> ahosant82@gmail.com</div>
                         </div>
 
                         {/* menus */}
@@ -61,6 +61,10 @@ const Navigetions = () => {
                             <Button className='border-0 bg-[#6c3ac8] text-white font-bold uppercase rounded-xl px-5' variant="outlined" href="#outlined-buttons">
                                 hire me!
                             </Button>
+                        </div>
+
+                        <div className="md:hidden">
+                            <button className=' text-2xl'><HiOutlineBars3CenterLeft/></button>
                         </div>
 
                     </Toolbar>

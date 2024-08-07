@@ -22,19 +22,19 @@ const Bannar = () => {
                         <Box className=' grid gap-8'>
                             <div className=" font-bold text-3xl">I am A.R Tonmoy</div>
 
-                            <div className=' capitalize font-extrabold text-[#a685e9] opacity-90 text-5xl  tracking-widest'>jr mern stack <br /> web developer</div>
+                            <div className=' capitalize font-extrabold text-[#a685e9] opacity-90 text-5xl  tracking-widest'>mern stack <br /> web developer</div>
 
                             <div className="">
                                 I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
                             </div>
 
-                            <div className='grid grid-cols-2 gap-4'>
+                            <div className='grid lg:grid-cols-2 gap-4'>
                                 {/* btns */}
                                 <Button className='text-[#8750f7] border-[#8750f7] hover:border-[#8750f7] rounded-full font-bold px-4' variant="outlined" endIcon={<CloudDownloadOutlinedIcon />} >
                                     download cv
                                 </Button>
 
-                                <Box className='social-icon flex gap-2 flex-wrap'>
+                                <Box className='social-icon flex gap-2 flex-wrap justify-center'>
                                     {/*  */}
                                     <Link href={'/'}><FaFacebookF></FaFacebookF></Link>
                                     {/*  */}

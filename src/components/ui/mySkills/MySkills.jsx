@@ -68,7 +68,7 @@ const MySkills = () => {
                 <SectionTitle position={'text-center'} TitleContent={'my skills'}/>
 
                 <Box className=' '>
-                    <Container className='grid grid-cols-3 md:grid-cols-9 gap-2'>
+                    <Container className='grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-4'>
                         {
                             skills.map(item => 
                                 <Box key={item}>
