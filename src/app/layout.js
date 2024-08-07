@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigetions from "@/components/shered/navigetion/Navigetions";
 import { Container } from "@mui/material";
 import Footer from "@/components/shered/footer/Footer";
+import Bannar from "@/components/ui/Bannar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="bg-gradient-to-r from-[#0f0715]  to-[#2a1454] min-h-screen text-white">
           <Navigetions />
-          <div className="min-h-screen">{children}</div>
+          <Bannar/>
+          <div className="min-h-screen bg-black">{children}</div>
           <Footer></Footer>
         </div>
 

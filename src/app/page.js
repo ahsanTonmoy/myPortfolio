@@ -1,5 +1,4 @@
 import AboutMe from '@/components/ui/aboutMe/AboutMe';
-import Bannar from '@/components/ui/Bannar';
 import React from 'react';
 import './style.css'
 import MySkills from '@/components/ui/mySkills/MySkills';
@@ -13,8 +12,6 @@ import Contact from '@/components/ui/contact/Contact';
 const HomePage = () => {
   return (
     <div className='wrepperArea'>
-      {/*  */}
-      <div className='bannar'><Bannar /></div>
       {/*  */}
       <div className='bgDark'><AboutMe></AboutMe></div>
       {/*  */}
