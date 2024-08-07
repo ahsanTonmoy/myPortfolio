@@ -1,5 +1,5 @@
 "use client"
-import * as React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,7 +12,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Menu from '../menu/Menu';
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
-
+import { RiCloseLargeFill } from "react-icons/ri";
 const Navigetions = () => {
     const pathName = usePathname();
     const page = [
@@ -38,6 +38,8 @@ const Navigetions = () => {
             pathName: '/blogs'
         },
     ]
+
+    const [menu, setMenu]= useState(false);
     return (
         <div className="px-2 md:px-10 py-2">
             <AppBar position="static" className=' bg-transparent p-2 shadow-none'>
@@ -53,7 +55,9 @@ const Navigetions = () => {
                         {/* menus */}
 
                         <div className="nav">
-                            <Menu></Menu>
+                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                                <Menu display={'flex'} />
+                            </Box>
                         </div>
 
                         {/* get here */}
@@ -64,12 +68,23 @@ const Navigetions = () => {
                         </div>
 
                         <div className="md:hidden">
-                            <button className=' text-2xl'><HiOutlineBars3CenterLeft/></button>
+                            <button className=' text-2xl' onClick={()=>setMenu(!menu)}>{!menu ? <HiOutlineBars3CenterLeft />:<RiCloseLargeFill/>}</button>
+                            {/*  */}
+
                         </div>
 
                     </Toolbar>
                 </Container>
             </AppBar>
+            {
+                menu ?      
+                <div className='bg-[#542f9c] w-full h-screen p-4 absolute left-0 top-20 z-40 '>
+                <Menu display={'grid gap-4'}></Menu>
+            </div>
+            :
+            null
+            }
+            
         </div>
     );
 };

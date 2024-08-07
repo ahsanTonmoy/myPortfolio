@@ -31,7 +31,7 @@ import AdbIcon from '@mui/icons-material/Adb';import Menu from "../menu/Menu";
 
                     {/*  */}
                     <Box>
-                        <Menu></Menu>
+                        <Menu display={`flex flex-wrap gap-3`}></Menu>
                     </Box>
 
                     {/*  */}
