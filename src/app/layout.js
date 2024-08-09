@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import './style.css'
 import Navigetions from "@/components/shered/navigetion/Navigetions";
 import { Container } from "@mui/material";
 import Footer from "@/components/shered/footer/Footer";
@@ -9,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: 'A R Tonmoy Portfolio',
-    template: '%s | A R Tonmoy Portfolio'
+    default: 'AR Tonmoy | Personal Portfolio',
+    template: '%s | Personal Portfolio'
   },
   description: "mern stack developer",
 

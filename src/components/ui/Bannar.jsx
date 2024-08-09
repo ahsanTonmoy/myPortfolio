@@ -20,9 +20,9 @@ const Bannar = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {/* text */}
                         <Box className=' grid gap-8'>
-                            <div className=" font-bold text-3xl">I am A.R Tonmoy</div>
+                            <div className=" font-m text-3xl uppercase">ahsanur rahman Tonmoy</div>
 
-                            <div className=' capitalize font-extrabold text-[#a685e9] opacity-90 text-5xl  tracking-widest'>mern stack <br /> web developer</div>
+                            <div className=' capitalize font-medium text-5xl tracking-widest bg-gradient-to-r from-[#8750f7]  to-white inline-block text-transparent bg-clip-text'>mern stack <br /> web developer</div>
 
                             <div className="">
                                 I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
@@ -49,7 +49,7 @@ const Bannar = () => {
                         </Box>
                         {/* image */}
                         <Box>
-                            <Container className='p-4 grid justify-items-center'>
+                            <Container className='px-8 py-10 grid justify-items-center '>
                                 <Box>
                                     <Image className='' src={bannar1} alt='bannar'></Image>
                                 </Box>

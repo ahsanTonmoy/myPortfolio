@@ -6,3 +6,8 @@
     color: #8750f7;
     padding: .7rem;
 }
+
+.social-icon a:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}

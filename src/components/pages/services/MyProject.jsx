@@ -61,15 +61,15 @@ const MyProject = () => {
                                     {/* btns */}
                                     <div className=" flex flex-wrap gap-2">
                                         {/*  */}
-                                        <div className=" uppercase text-xs font-medium py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">react js</div>
+                                        <div className=" uppercase text-xs font-medium h-6 py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">react js</div>
                                         {/*  */}
-                                        <div className=" uppercase text-xs font-medium py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">NEXT js</div>
+                                        <div className=" uppercase text-xs font-medium h-6 py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">NEXT js</div>
                                         {/*  */}
-                                        <div className=" uppercase text-xs font-medium py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">tailwind css</div>
+                                        <div className=" uppercase text-xs font-medium h-6 py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">tailwind css</div>
                                         {/*  */}
-                                        <div className=" uppercase text-xs font-medium py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">node</div>
+                                        <div className=" uppercase text-xs font-medium h-6 py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">node</div>
                                         {/*  */}
-                                        <div className=" uppercase text-xs font-medium py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">express</div>
+                                        <div className=" uppercase text-xs font-medium h-6 py-1 px-4 bg-black w-fit rounded-full border border-[#2a1454] hover:bg-gradient-to-t from-[#6c3ccb] to-[#2a1454] ">express</div>
                                         {/*  */}
 
                                     </div>
