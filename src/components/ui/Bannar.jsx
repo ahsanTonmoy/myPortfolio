@@ -60,7 +60,7 @@ const Bannar = () => {
             </Container>
 
             {/*  */}
-            <div className=' pb-36'>
+            <div className='pt-16'>
                 <Silder />
             </div>
         </div>

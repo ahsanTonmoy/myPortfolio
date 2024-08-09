@@ -8,7 +8,7 @@ const Myinfo = () => {
         <div>
             <Container className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                 {/*  */}
-                <Box className='border border-[#2a1454] p-8 rounded-md grid gap-4'>
+                <Box className='border border-[#2a1454] p-8 rounded-md grid gap-2'>
                     {/*  */}
                     <SectionTitle TitleContent={'Achievements in my professional life.'}/>
 

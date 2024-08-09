@@ -3,25 +3,28 @@ import { FaStarOfLife } from "react-icons/fa6";
 const Silder = () => {
     const items = [
         {
-            title: 'mern stack development'
+            title: 'e-commrece'
         },
         {
-            title: 'Full stack development'
+            title: 'corporate office'
         },
         {
-            title: 'frontend development'
+            title: 'inventory manegement'
         },
         {
-            title: 'web development'
+            title: 'pos system'
         },
         {
-            title: 'wordpress development'
+            title: 'personal portfolio'
+        },
+        {
+            title: 'wordpress theme'
         },
     ]
     return (
         <div>
-            <div className=" absolute left-0 bg-black py-4 w-[99.5%] md:w-[99.9%] -rotate-2">
-                <marquee direction="left" Scrolldelay='100' className=' uppercase font-bold text-xl'>
+            <div className=" bg-black py-4 w-full">
+                <marquee direction="left" Scrolldelay='200' className=' uppercase font-bold text-xl'>
                     <div className="flex gap-6">
                         {
                             items.map(item =>

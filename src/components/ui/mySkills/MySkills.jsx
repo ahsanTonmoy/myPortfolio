@@ -30,7 +30,12 @@ const MySkills = () => {
             persent: '100%',
         },
         {
-            title: 'react',
+            title: 'react js',
+            svg: <FaReact/>,
+            persent: '90%',
+        },
+        {
+            title: 'next js',
             svg: <FaReact/>,
             persent: '90%',
         },
@@ -68,11 +73,11 @@ const MySkills = () => {
                 <SectionTitle position={'text-center'} TitleContent={'my skills'}/>
 
                 <Box className=' '>
-                    <Container className='grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-4'>
+                    <Container className='grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-20'>
                         {
                             skills.map(item => 
                                 <Box key={item}>
-                                    <Box className='bg-[#0f0715] p-4 py-8 grid justify-items-center gap-4 text-3xl rounded-lg border border-[#2a1454]'>
+                                    <Box className='bg-[#0f0715] p-4 py-8 grid justify-items-center gap-4 text-3xl rounded-lg border border-[#2a1454] hover:bg-[#7636f8] cursor-pointer'>
                                         <div className="text-4xl">{item.svg}</div>
                                         <div className="text-base text-slate-300">{item.persent}</div>
                                     </Box>

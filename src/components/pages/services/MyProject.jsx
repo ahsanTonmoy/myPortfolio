@@ -1,8 +1,13 @@
 import SectionTitle from '@/components/shered/sectionTitle/SectionTitle';
 import { Box, Container } from '@mui/material';
-import bistroBoss from '../../../assects/image/work/bistroBoss.png'
 import Image from 'next/image';
 import { MdFitScreen } from "react-icons/md";
+// image
+import bistroBoss from '../../../assects/image/work/bistroBoss.png';
+import fruitBrust from '../../../assects/image/work/fruit-brust.jpg';
+import phTube from '../../../assects/image/work/ph-tube.jpg';
+import gameHunt from '../../../assects/image/work/game-hunting.jpg';
+import summerSale from '../../../assects/image/work/summer-sale.jpg';
 const MyProject = () => {
     const projects = [
         {
@@ -11,19 +16,19 @@ const MyProject = () => {
             description: 'bistro boss is a modern and responsive restaurant website designed to provide an exceptional online experience for customers looking to explore, book, and order from their favorite restaurants. '
         },
         {
-            title: 'bistro boss',
-            shots: bistroBoss,
-            description: 'bistro boss is a modern and responsive restaurant website designed to provide an exceptional online experience for customers looking to explore, book, and order from their favorite restaurants. '
+            title: 'fruit brust',
+            shots: fruitBrust,
+            description: 'Online fruit shop , best food for online'
         },
         {
-            title: 'bistro boss',
-            shots: bistroBoss,
-            description: 'bistro boss is a modern and responsive restaurant website designed to provide an exceptional online experience for customers looking to explore, book, and order from their favorite restaurants. '
+            title: 'ph tube',
+            shots: phTube,
+            description: 'online video sharing platform'
         },
         {
-            title: 'bistro boss',
-            shots: bistroBoss,
-            description: 'bistro boss is a modern and responsive restaurant website designed to provide an exceptional online experience for customers looking to explore, book, and order from their favorite restaurants. '
+            title: 'game hunt',
+            shots: gameHunt,
+            description: 'Online  gameing platfurm chose you febarite game'
         },
     ]
     return (
@@ -33,16 +38,16 @@ const MyProject = () => {
                 <SectionTitle TitleContent={'my projects'}></SectionTitle>
 
                 {/*  */}
-                <Container className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                <Container className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                     {
                         projects.map(item =>
-                            <Box key={item} className='pCard md:flex flex-row-reverse gap-4 rounded-lg bg-[#0f0715] hover:bg-[#7636f8] border-2 border-[#2a1454] cursor-pointer'>
+                            <Box key={item} className='pCard md:h-[350px] md:flex flex-row-reverse gap-4 rounded-lg bg-[#0f0715] hover:bg-[#7636f8] border-2 border-[#2a1454] cursor-pointer'>
                                 {/*  */}
-                                <Box className=' md:w-2/5 relative'>
-                                    <Image className='md:h-full h-[350px] rounded-t-md md:rounded-e-md' src={item.shots} alt={item.title} />
+                                <Box className=' md:w-2/5 w-full relative'>
+                                    <Image className='md:h-full h-[300px] rounded-t-md md:rounded-e-md' src={item.shots} alt={item.title} />
                                     {/* overlay */}
                                     <div className='overlay bg-[#0f0715] bg-opacity-60 w-full h-full absolute top-0'>
-                                        <div className=" uppercase font-semibold text-sm flex justify-center gap-2 py-[48%] md:py-[75%]">live preview <div className=" text-xl"><MdFitScreen /></div></div>
+                                        <div className=" uppercase font-semibold text-sm flex justify-center gap-2 py-[48%] lg:py-[75%]">live preview <div className=" text-xl"><MdFitScreen /></div></div>
 
                                     </div>
                                 </Box>
@@ -52,7 +57,7 @@ const MyProject = () => {
                                     {/*  */}
                                     <div className=" capitalize text-lg font-medium">{item.title}</div>
                                     {/*  */}
-                                    <div className=" opacity-80 font-light text-sm overflow-hidden">{item.description}</div>
+                                    <div className=" opacity-80 font-light text-sm h-20 text-ellipsis overflow-hidden">{item.description}</div>
                                     {/* btns */}
                                     <div className=" flex flex-wrap gap-2">
                                         {/*  */}

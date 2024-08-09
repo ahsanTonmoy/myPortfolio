@@ -6,6 +6,7 @@ import RecentRork from '@/components/ui/recentWork/RecentRork';
 import MyProfile from '@/components/ui/myProfile/MyProfile';
 import Head from 'next/head';
 import Contact from '@/components/ui/contact/Contact';
+import Myinfo from '@/components/pages/about/Myinfo';
 
 
 
@@ -13,7 +14,7 @@ const HomePage = () => {
   return (
     <div className='wrepperArea'>
       {/*  */}
-      <div className='bgDark'><AboutMe></AboutMe></div>
+      <div className='bgDark'><Myinfo></Myinfo></div>
       {/*  */}
       <div className='Dark'><MySkills></MySkills></div>
       {/*  */}
