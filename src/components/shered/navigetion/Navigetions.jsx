@@ -62,12 +62,12 @@ const Navigetions = () => {
 
                         {/* get here */}
                         <div className="">
-                            <Button className='border-0 bg-[#6c3ac8] text-white font-bold uppercase rounded-xl px-5' variant="outlined" href="#outlined-buttons">
+                            <Button className='border-0 bg-[#6c3ac8] text-white font-bold uppercase rounded-xl px-5 hidden lg:block' variant="outlined" href="#outlined-buttons">
                                 hire me!
                             </Button>
                         </div>
 
-                        <div className="md:hidden">
+                        <div className="lg:hidden">
                             <button className=' text-2xl' onClick={()=>setMenu(!menu)}>{!menu ? <HiOutlineBars3CenterLeft />:<RiCloseLargeFill/>}</button>
                             {/*  */}
 

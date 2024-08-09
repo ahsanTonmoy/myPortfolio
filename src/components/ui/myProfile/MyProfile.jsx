@@ -52,7 +52,7 @@ const MyProfile = () => {
                     <Box className='grid gap-5'>
                         {
                             experience.map(item=>
-                                <Box className='bgDark p-4 rounded-lg w-11/12 grid gap-4' key={item}>
+                                <Box className='bgDark p-4 rounded-lg w-11/12 grid gap-4 cursor-pointer' key={item}>
                                     <div className=" capitalize font-bold text-[#8750f7]">{item.experience}</div>
                                     <div className="text-lg font-bold uppercase">{item.title}</div>
                                 </Box>
@@ -66,7 +66,7 @@ const MyProfile = () => {
                     <Box className='grid gap-5'>
                         {
                             education.map(item=>
-                                <Box className='bgDark p-4 rounded-lg w-11/12 grid gap-4' key={item}>
+                                <Box className='bgDark p-4 rounded-lg w-11/12 grid gap-4 cursor-pointer' key={item}>
                                     <div className=" capitalize font-bold text-[#8750f7]">{item.years}</div>
                                     <div className="text-lg font-bold uppercase">{item.title}</div>
                                     <div className=" uppercase text-slate-200 font-semibold">{item.institute}</div>

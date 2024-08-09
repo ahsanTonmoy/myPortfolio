@@ -17,12 +17,12 @@ const page = () => {
             <div className="bgDark"><Myinfo/></div>
             {/*  */}
             <div className="">
-                <Container>
+                <div>
                     {/*  */}
                     <SectionTitle TitleContent={'my profile'} position={'text-center'}/>
                     {/*  */}
-                    <Container><MyProfile/></Container>
-                </Container>
+                    <div><MyProfile/></div>
+                </div>
             </div>
 
             {/*  */}

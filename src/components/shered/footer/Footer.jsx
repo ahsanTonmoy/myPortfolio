@@ -14,13 +14,13 @@ import AdbIcon from '@mui/icons-material/Adb';import Menu from "../menu/Menu";
                     {/*  */}
                     <Box className='social-icon flex gap-4 flex-wrap'>
                         {/*  */}
-                        <Link href={'/'}><FaFacebookF></FaFacebookF></Link>
+                        <Link href={'https://www.facebook.com/profile.php?id=100010579990810'}><FaFacebookF></FaFacebookF></Link>
                         {/*  */}
                         <Link href={'/'}><FaTwitter></FaTwitter></Link>
                         {/*  */}
-                        <Link href={'/'}><FaLinkedinIn></FaLinkedinIn></Link>
+                        <Link href={'https://www.linkedin.com/in/ahsanur-rahman-tonmoy-1680921b6'}><FaLinkedinIn></FaLinkedinIn></Link>
                         {/*  */}
-                        <Link href={'/'}><FaGithub></FaGithub></Link>
+                        <Link href={'https://github.com/ahsanTonmoy'}><FaGithub></FaGithub></Link>
 
                     </Box>
 
@@ -36,7 +36,7 @@ import AdbIcon from '@mui/icons-material/Adb';import Menu from "../menu/Menu";
 
                     {/*  */}
                     <Box>
-                        <div className="text-[#8750f7] text-lg">© 2024 All rights reserved by TONMOY</div>
+                        <div className="bg-gradient-to-r from-[#8750f7]  to-white inline-block text-transparent bg-clip-text text-lg">© 2024 All rights reserved by <Link hraf='/'>Tonmoy</Link></div>
                     </Box>
 
 

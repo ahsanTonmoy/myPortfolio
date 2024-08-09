@@ -34,16 +34,17 @@ const Bannar = () => {
                                     download cv
                                 </Button>
 
-                                <Box className='social-icon flex gap-2 flex-wrap justify-center'>
+                                {/*  */}
+
+                                <Box className='social-icon flex gap-4 flex-wrap'>
                                     {/*  */}
-                                    <Link href={'/'}><FaFacebookF></FaFacebookF></Link>
+                                    <Link href={'https://www.facebook.com/profile.php?id=100010579990810'}><FaFacebookF></FaFacebookF></Link>
                                     {/*  */}
                                     <Link href={'/'}><FaTwitter></FaTwitter></Link>
                                     {/*  */}
-                                    <Link href={'/'}><FaLinkedinIn></FaLinkedinIn></Link>
+                                    <Link href={'https://www.linkedin.com/in/ahsanur-rahman-tonmoy-1680921b6'}><FaLinkedinIn></FaLinkedinIn></Link>
                                     {/*  */}
-                                    <Link href={'/'}><FaGithub></FaGithub></Link>
-
+                                    <Link href={'https://github.com/ahsanTonmoy'}><FaGithub></FaGithub></Link>
                                 </Box>
                             </div>
                         </Box>
