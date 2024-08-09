@@ -36,7 +36,7 @@ import AdbIcon from '@mui/icons-material/Adb';import Menu from "../menu/Menu";
 
                     {/*  */}
                     <Box>
-                        <div className="bg-gradient-to-r from-[#8750f7]  to-white inline-block text-transparent bg-clip-text text-lg">© 2024 All rights reserved by <Link hraf='/'>Tonmoy</Link></div>
+                        <div className="bg-gradient-to-r from-[#8750f7]  to-white inline-block text-transparent bg-clip-text text-lg">© 2024 All rights reserved by <Link href='/'>Tonmoy</Link></div>
                     </Box>
 
 
