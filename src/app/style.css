@@ -38,3 +38,13 @@ body{
     display: grid;transition: 20s;
     
 }
+
+/*  */
+
+.pCard .overlay{
+    display: none;
+}
+
+.pCard:hover .overlay{
+    display: block;
+}

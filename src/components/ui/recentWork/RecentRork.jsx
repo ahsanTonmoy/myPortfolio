@@ -3,8 +3,8 @@ import { Box, Container } from '@mui/material';
 import React from 'react';
 import bistroBoss from '../../../assects/image/work/bistroBoss.png'
 import Image from 'next/image';
-import { BsArrowUpRight } from "react-icons/bs";const RecentRork = () => {
-    const projects= [
+import { BsArrowUpRight } from "react-icons/bs";
+export const projects= [
         {
             title: 'bistro boss Restaurant',
             shots: bistroBoss,
@@ -26,6 +26,8 @@ import { BsArrowUpRight } from "react-icons/bs";const RecentRork = () => {
             description: 'Online Food Order & restaurent booking system'
         },
     ]
+const RecentRork = () => {
+    
     return (
         <div>
             <Container className=''>
