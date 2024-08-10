@@ -49,7 +49,7 @@ const Navigetions = () => {
                         <div className="brand flex gap-5">
                             <AdbIcon sx={{ display: { xs: '', md: 'flex' }, mr: 1, fontSize: '30px' }} />
 
-                            <div className="py-1 hidden md:block"> ahosant82@gmail.com</div>
+                            <Link href={'mailto:ahosant82@gmail.com'} className="py-1 hidden md:block"> ahosant82@gmail.com</Link>
                         </div>
 
                         {/* menus */}
