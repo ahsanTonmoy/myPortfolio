@@ -39,9 +39,9 @@ const Navigetions = () => {
         },
     ]
 
-    const [menu, setMenu]= useState(false);
+    const [menu, setMenu] = useState(false);
     return (
-        <div className="px-2 md:px-10 py-2">
+        <div className="px-2 md:px-16 py-2">
             <AppBar position="static" className=' bg-transparent p-2 shadow-none'>
                 <Container className='p-2' maxWidth="xl">
                     <Toolbar className='flex justify-between' disableGutters>
@@ -52,23 +52,24 @@ const Navigetions = () => {
                             <Link href={'mailto:ahosant82@gmail.com'} className="py-1 hidden md:block cursor-pointer"> ahosant82@gmail.com</Link>
                         </div>
 
-                        {/* menus */}
 
-                        <div className="nav">
-                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                                <Menu display={'flex'} />
-                            </Box>
-                        </div>
 
                         {/* get here */}
-                        <div className="">
+                        <div className=" flex gap-8">
+                            {/* menus */}
+
+                            <div className="nav mt-2">
+                                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                                    <Menu display={'flex'} />
+                                </Box>
+                            </div>
                             <Button className='border-0 bg-[#6c3ac8] text-white font-bold uppercase rounded-xl px-5 hidden lg:block' variant="outlined" href="#outlined-buttons">
                                 hire me!
                             </Button>
                         </div>
 
                         <div className="lg:hidden">
-                            <button className=' text-2xl' onClick={()=>setMenu(!menu)}>{!menu ? <HiOutlineBars3CenterLeft />:<RiCloseLargeFill/>}</button>
+                            <button className=' text-2xl' onClick={() => setMenu(!menu)}>{!menu ? <HiOutlineBars3CenterLeft /> : <RiCloseLargeFill />}</button>
                             {/*  */}
 
                         </div>
@@ -77,14 +78,14 @@ const Navigetions = () => {
                 </Container>
             </AppBar>
             {
-                menu ?      
-                <div className='bg-[#542f9c] w-full h-screen p-4 absolute left-0 top-20 z-40 '>
-                <Menu display={'grid gap-4'}></Menu>
-            </div>
-            :
-            null
+                menu ?
+                    <div className='bg-[#542f9c] w-full h-screen p-4 absolute left-0 top-20 z-40 '>
+                        <Menu display={'grid gap-4'}></Menu>
+                    </div>
+                    :
+                    null
             }
-            
+
         </div>
     );
 };
