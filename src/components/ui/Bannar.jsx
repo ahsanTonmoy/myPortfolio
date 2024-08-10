@@ -36,7 +36,7 @@ const Bannar = () => {
 
                                 {/*  */}
 
-                                <Box className='social-icon flex gap-4 flex-wrap'>
+                                <Box className='social-icon flex gap-4 flex-wrap justify-center'>
                                     {/*  */}
                                     <Link href={'https://www.facebook.com/profile.php?id=100010579990810'}><FaFacebookF></FaFacebookF></Link>
                                     {/*  */}
