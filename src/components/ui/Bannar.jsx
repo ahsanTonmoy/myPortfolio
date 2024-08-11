@@ -28,11 +28,14 @@ const Bannar = () => {
                                 I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
                             </div>
 
-                            <div className='grid lg:grid-cols-2 gap-4'>
+                            <div className='grid lg:grid-cols-2 gap-4 justify-items-center'>
                                 {/* btns */}
-                                <Button className='text-[#8750f7] border-[#8750f7] hover:border-[#8750f7] rounded-full font-bold px-4' variant="outlined" endIcon={<CloudDownloadOutlinedIcon />} >
+                                <Link  href={'https://drive.google.com/file/d/1F5Yc6C4yVOnA_ps691hNneoEYYXG08sQ/view?usp=drive_link'} target="_blank">
+                                 <Button className='text-[#8750f7] border-[#8750f7] hover:border-[#8750f7] rounded-full font-bold px-8' variant="outlined" endIcon={<CloudDownloadOutlinedIcon />} >
                                     download cv
                                 </Button>
+                                </Link>
+                               
 
                                 {/*  */}
 
