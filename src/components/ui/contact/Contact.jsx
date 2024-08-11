@@ -59,7 +59,7 @@ const Contact = () => {
 
                                 {/*  */}
 
-                                <input className=' bg-gradient-to-r from-[#6c3ccb] to-[#2a1454] p-4 w-full rounded-lg font-bold capitalize cursor-pointer my-4' type="submit" value="send message" />
+                                <input className='hover:bg-gradient-to-l bg-gradient-to-r from-[#6c3ccb] to-[#2a1454] p-4 w-full rounded-lg font-bold capitalize cursor-pointer my-4' type="submit" value="send message" />
                             </form>
                         </Container>
                     </Box>

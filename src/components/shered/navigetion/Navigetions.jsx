@@ -63,7 +63,7 @@ const Navigetions = () => {
                                     <Menu display={'flex'} />
                                 </Box>
                             </div>
-                            <Button className='border-0 bg-[#6c3ac8] text-white font-bold uppercase rounded-xl px-5 hidden lg:block' variant="outlined" href="#outlined-buttons">
+                            <Button className='bg-gradient-to-r hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] border-0 hover:border-0 border-[#6c3ccb] text-white font-bold uppercase rounded-full px-8 py-2 hidden lg:block' variant="outlined" href="#outlined-buttons">
                                 hire me!
                             </Button>
                         </div>
