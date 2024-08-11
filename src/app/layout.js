@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="bn">
       
       <body className={inter.className}>
-        <div className="bg-gradient-to-r from-[#0f0715]  to-[#2a1454] min-h-screen text-white">
+        <div className="bg-gradient-to-r from-[#0F0719] from-0% via-[#2a1439] via-60% to-[#1c1640] to-100% min-h-screen text-white">
           <Navigetions />
           <Bannar/>
           <div className="min-h-screen bg-black">{children}</div>

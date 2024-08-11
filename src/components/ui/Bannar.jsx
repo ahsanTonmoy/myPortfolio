@@ -17,12 +17,12 @@ const Bannar = () => {
         <div>
             <Container className='p-2 md:p-10'>
                 <Box className=' p-4'>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sectionTitle">
                         {/* text */}
                         <Box className=' grid gap-8'>
-                            <div className=" font-m text-3xl uppercase">ahsanur rahman Tonmoy</div>
+                            <div className=" font-bold text-4xl text-[#d9d9d9] "> I am AR Tonmoy</div>
 
-                            <div className=' capitalize font-medium text-5xl tracking-widest bg-gradient-to-r from-[#8750f7]  to-white inline-block text-transparent bg-clip-text'>mern stack <br /> web developer</div>
+                            <div className=' capitalize md:text-[60px] text-4xl tracking-widest bg-gradient-to-r from-[#7636f8] to-white inline-block text-transparent bg-clip-text font-bold leading-tight	'>mern stack web developer</div>
 
                             <div className="">
                                 I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
