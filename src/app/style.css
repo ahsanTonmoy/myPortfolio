@@ -5,6 +5,8 @@
 #8750f7
 #7636f8
 #3c0263
+
+bg-gradient-to-r from-[#0F0715] from-0% via-[#2a1439] via-60% to-[#1c1640] to-100%
 */
 
 ::-webkit-scrollbar{

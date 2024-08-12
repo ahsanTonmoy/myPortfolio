@@ -5,7 +5,6 @@ import Navigetions from "@/components/shered/navigetion/Navigetions";
 import { Container } from "@mui/material";
 import Footer from "@/components/shered/footer/Footer";
 import Bannar from "@/components/ui/Bannar";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,10 +18,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="bn">
+    <html lang="en">
       
       <body className={inter.className}>
-        <div className="bg-gradient-to-r from-[#0F0719] from-0% via-[#2a1439] via-60% to-[#1c1640] to-100% min-h-screen text-white">
+        <div className="bg-gradient-to-r from-[#0F0715] from-40%  to-[#2a1454] to-100% min-h-screen text-white">
           <Navigetions />
           <Bannar/>
           <div className="min-h-screen bg-black">{children}</div>

@@ -42,17 +42,15 @@ const Navigetions = () => {
     const [menu, setMenu] = useState(false);
     return (
         <div className="px-2 md:px-16 py-2">
-            <AppBar position="static" className=' bg-transparent p-2 shadow-none'>
-                <Container className='p-2' maxWidth="xl">
-                    <Toolbar className='flex justify-between' disableGutters>
+            <div className=' bg-transparent p-2 shadow-none'>
+                <Container className='p-2'>
+                    <Toolbar className='flex justify-between' >
                         {/* logo */}
                         <div className="brand flex gap-5">
                             <AdbIcon sx={{ display: { xs: '', md: 'flex' }, mr: 1, fontSize: '30px' }} />
 
                             <Link href={'mailto:ahosant82@gmail.com'} className="py-1 hidden md:block cursor-pointer"> ahosant82@gmail.com</Link>
                         </div>
-
-
 
                         {/* get here */}
                         <div className=" flex gap-8">
@@ -66,6 +64,7 @@ const Navigetions = () => {
                             <Button className='bg-gradient-to-r hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] border-0 hover:border-0 border-[#6c3ccb] text-white font-bold uppercase rounded-full px-8 py-2 hidden lg:block' variant="outlined" href="#outlined-buttons">
                                 hire me!
                             </Button>
+                            
                         </div>
 
                         <div className="lg:hidden">
@@ -76,11 +75,11 @@ const Navigetions = () => {
 
                     </Toolbar>
                 </Container>
-            </AppBar>
+            </div>
             {
                 menu ?
-                    <div className='bg-[#542f9c] w-full h-screen p-4 absolute left-0 top-20 z-40 '>
-                        <Menu display={'grid gap-4'}></Menu>
+                    <div className='bg-[#0f0715] w-full py-4 h-screen absolute left-0 top-20 z-40 '>
+                        <Menu display={'grid gap-2'}></Menu>
                     </div>
                     :
                     null
