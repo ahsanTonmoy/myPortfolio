@@ -46,7 +46,7 @@ const Bannar = () => {
                                 <div className="leading-tight font-bold uppercase text-4xl text-[#d9d9d9] ">hello. I am Tonmoy</div>
                             </div>
 
-                            <div className=' uppercase md:text-[50px] text-4xl tracking-widest bg-gradient-to-r from-[#7636f8] to-white inline-block text-transparent bg-clip-text font-bold leading-tight	'>full stack (mern) web developer</div>
+                            <div className=' uppercase md:text-[50px] text-4xl tracking-widest bg-gradient-to-r from-[#7636f8] to-white inline-block text-transparent bg-clip-text font-bold leading-tight'>full stack (mern) <br/> web developer</div>
 
                             <div className="">
                                 I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
