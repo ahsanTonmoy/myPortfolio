@@ -71,3 +71,10 @@ body{
 .pCard:hover .overlay{
     display: block;
 }
+
+
+/*  */
+.sideBar{
+    backdrop-filter: blur(10px);
+
+}

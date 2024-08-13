@@ -78,11 +78,13 @@ const Navigetions = () => {
             </div>
             {
                 menu ?
-                    <div className='bg-[#0f0715] w-full py-4 h-screen fixed left-0 top-0 z-40 '>
+                    <div className='sideBar w-full fixed left-0 top-0  z-40'>
+                        <div className='bg-[#0f0715] w-80 py-4 h-screen'>
                         <div className=" grid justify-items-end gap-8 px-4 py-2 text-xl" onClick={() => setMenu(!menu)}>
                         <RiCloseLargeFill />
                         </div>
                         <Menu display={'grid gap-2 my-4'}></Menu>
+                    </div>
                     </div>
                     :
                     null
