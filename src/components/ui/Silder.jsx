@@ -24,7 +24,7 @@ const Silder = () => {
     return (
         <div>
             <div className=" bg-black py-4 w-full">
-                <marquee direction="left" Scrolldelay='200' className=' uppercase font-bold text-xl'>
+                <marquee direction="left" scrolldelay='200' className=' uppercase font-bold text-xl'>
                     <div className="flex gap-6">
                         {
                             items.map(item =>
