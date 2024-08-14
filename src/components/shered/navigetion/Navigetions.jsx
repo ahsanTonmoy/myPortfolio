@@ -68,7 +68,7 @@ const Navigetions = () => {
                         </div>
 
                         <div className="lg:hidden">
-                            <button className=' text-2xl' onClick={() => setMenu(!menu)}>{!menu ? <HiOutlineBars3CenterLeft /> : <RiCloseLargeFill />}</button>
+                            <button className=' text-2xl font-extrabold' onClick={() => setMenu(!menu)}><HiOutlineBars3CenterLeft /></button>
                             {/*  */}
 
                         </div>

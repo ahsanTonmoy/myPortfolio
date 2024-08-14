@@ -75,6 +75,6 @@ body{
 
 /*  */
 .sideBar{
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(30px);
 
 }
