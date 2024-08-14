@@ -10,26 +10,31 @@ import fruitBrust from '../../../assects/image/work/fruit-brust.jpg';
 import phTube from '../../../assects/image/work/ph-tube.jpg';
 import gameHunt from '../../../assects/image/work/game-hunting.jpg';
 import summerSale from '../../../assects/image/work/summer-sale.jpg';
+import Link from 'next/link';
 export const projects= [
         {
             title: 'bistro boss Restaurant',
             shots: bistroBoss,
-            description: 'Online Food Order & restaurent booking system'
+            description: 'Online Food Order & restaurent booking system',
+            link: 'https://rms-clint.web.app/'
         },
         {
             title: 'fruit brust',
             shots: fruitBrust,
-            description: 'Online fruit shop , best food for online'
+            description: 'Online fruit shop , best food for online',
+            link :`https://ahosant82.github.io/FruiteBrust/`
         },
         {
             title: 'ph tube',
             shots: phTube,
-            description: 'online video sharing platform'
+            description: 'online video sharing platform',
+            link: `https://sensational-fudge-a45baf.netlify.app/`
         },
         {
             title: 'game hunt',
             shots: gameHunt,
-            description: 'Online  gameing platfurm chose you febarite game'
+            description: 'Online  gameing platfurm chose you febarite game',
+            link : `https://ahosant82.github.io/TheGameing/`
         },
     ]
 const RecentRork = () => {
@@ -47,7 +52,7 @@ const RecentRork = () => {
                     <Box className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
                         {
                             projects.map(item => 
-                                <Box className=' p-4 md:p-10 pb-0 bgDark hover:border border-[#7636f8] rounded-xl relative item cursor-pointer' key={item}>
+                                <Link href={item.link} target='_blank' className=' p-4 md:p-10 pb-0 bgDark hover:border border-[#7636f8] rounded-xl relative item cursor-pointer' key={item}>
                                     <Image className=' h-[500px]' src={item.shots} alt={item.title}></Image>
 
                                     <Box className='bg-gradient-to-r from-[#814cec] to-[#2a1454] p-4 rounded-2xl absolute bottom-5 left-4 md:left-5 w-11/12 mx-auto gap-4 grid hoverCnt capitalize'>
@@ -55,7 +60,7 @@ const RecentRork = () => {
                                         <div className="">{item.description}</div>
                                         <div className="absolute right-6 top-1/3 font-black text-3xl"><BsArrowUpRight/></div>
                                     </Box>
-                                </Box>
+                                </Link>
                             )
                         }
                     </Box>

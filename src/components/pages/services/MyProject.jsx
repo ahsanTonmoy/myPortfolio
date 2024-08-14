@@ -2,6 +2,7 @@ import SectionTitle from '@/components/shered/sectionTitle/SectionTitle';
 import { Box, Container } from '@mui/material';
 import Image from 'next/image';
 import { MdFitScreen } from "react-icons/md";
+import Link from 'next/link'
 // image
 import bistroBoss from '../../../assects/image/work/bistroBoss.png';
 import fruitBrust from '../../../assects/image/work/fruit-brust.jpg';
@@ -13,22 +14,26 @@ const MyProject = () => {
         {
             title: 'bistro boss',
             shots: bistroBoss,
-            description: 'bistro boss is a modern and responsive restaurant website designed to provide an exceptional online experience for customers looking to explore, book, and order from their favorite restaurants. '
+            description: 'bistro boss is a modern and responsive restaurant website designed to provide an exceptional online experience for customers looking to explore, book, and order from their favorite restaurants. ',
+            link: 'https://rms-clint.web.app/'
         },
         {
             title: 'fruit brust',
             shots: fruitBrust,
-            description: 'Online fruit shop , best food for online'
+            description: 'Online fruit shop , best food for online',
+            link :`https://ahosant82.github.io/FruiteBrust/`
         },
         {
             title: 'ph tube',
             shots: phTube,
-            description: 'online video sharing platform'
+            description: 'online video sharing platform',
+            link: `https://sensational-fudge-a45baf.netlify.app/`
         },
         {
             title: 'game hunt',
             shots: gameHunt,
-            description: 'Online  gameing platfurm chose you febarite game'
+            description: 'Online  gameing platfurm chose you febarite game',
+             link : `https://ahosant82.github.io/TheGameing/`
         },
     ]
     return (
@@ -46,10 +51,10 @@ const MyProject = () => {
                                 <Box className=' md:w-2/5 w-full relative'>
                                     <Image className='md:h-full h-[300px] rounded-t-md md:rounded-e-md' src={item.shots} alt={item.title} />
                                     {/* overlay */}
-                                    <div className='overlay bg-[#0f0715] bg-opacity-60 w-full h-full absolute top-0'>
+                                    <Link href={item.link} className='overlay bg-[#0f0715] bg-opacity-60 w-full h-full absolute top-0'>
                                         <div className=" uppercase font-semibold text-sm flex justify-center gap-2 py-[48%] lg:py-[75%]">live preview <div className=" text-xl"><MdFitScreen /></div></div>
 
-                                    </div>
+                                    </Link>
                                 </Box>
 
                                 {/*  */}
