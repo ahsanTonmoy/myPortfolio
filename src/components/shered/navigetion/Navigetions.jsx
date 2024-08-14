@@ -79,7 +79,7 @@ const Navigetions = () => {
             {
                 menu ?
                     <div className='sideBar w-full fixed left-0 top-0  z-40'>
-                        <div className='bg-[#0f0715] w-80 py-4 h-screen'>
+                        <div className='bg-gradient-to-b from-[#0F0715] from-0%  to-[#6c3ccb] to-96% w-60 py-4 h-screen'>
                         <div className=" grid justify-items-end gap-8 px-4 py-2 text-xl" onClick={() => setMenu(!menu)}>
                         <RiCloseLargeFill />
                         </div>
