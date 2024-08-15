@@ -1,9 +1,9 @@
 
-const fadeIn = (direction, dalay) =>{
+export const fadeIn = (direction, dalay) =>{
     return{
-        hideen: {
-            y: direction === 'up' ? 40 : direction === 'down' ? -40 : 0,
-            x: direction === 'left' ? 40 : direction === 'right'? -40: 0,
+        hidden: {
+            y: direction === 'up' ? 40 : direction === 'down' ? -40 : -0,
+            x: direction === 'left' ? 40 : direction === 'right'? -40: -0,
         },
 
         show:{
