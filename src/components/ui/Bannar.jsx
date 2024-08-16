@@ -40,7 +40,7 @@ const Bannar = () => {
                         {/* text */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 2 }} className=' grid gap-8'>
                             <div>
                                 <div className="leading-tight font-bold uppercase text-4xl text-[#d9d9d9] ">hello. I am Tonmoy</div>
@@ -78,7 +78,7 @@ const Bannar = () => {
                         {/* image */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 2.7 }} className='hidden lg:block'>
                             <Container className=' py-10 grid justify-items-center '>
                                 <Box className=''>

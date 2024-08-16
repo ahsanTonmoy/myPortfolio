@@ -1,5 +1,4 @@
 'use client'
-import AboutMe from '@/components/ui/aboutMe/AboutMe';
 import React from 'react';
 import './style.css'
 import MySkills from '@/components/ui/mySkills/MySkills';
@@ -20,13 +19,25 @@ const HomePage = () => {
       {/*  */}
       <div className='bgDark'><Myinfo></Myinfo></div>
       {/*  */}
-      <div className='Dark'><MySkills></MySkills></div>
+      <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.6 }} className='Dark'><MySkills></MySkills></motion.div>
       {/*  */}
-      <div className='bgDark'><RecentRork></RecentRork></div>
+      <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.6 }}  className='bgDark'><RecentRork></RecentRork></motion.div>
       {/*  */}
-      <div className='Dark'><MyProfile/></div>
+      <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.6 }} className='Dark'><MyProfile/></motion.div>
       {/*  */}
-      <div className='bgDark'><Contact></Contact></div>
+      <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.6 }} className='bgDark'><Contact></Contact></motion.div>
     </motion.div>
   );
 };
