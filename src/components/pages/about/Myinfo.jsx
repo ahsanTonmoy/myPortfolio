@@ -1,3 +1,4 @@
+'use client'
 import SectionTitle from '@/components/shered/sectionTitle/SectionTitle';
 import { Box, Container } from '@mui/material';
 import React from 'react';
