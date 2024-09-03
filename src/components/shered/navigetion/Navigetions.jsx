@@ -61,7 +61,7 @@ const Navigetions = () => {
     return (
         <div className=" py-2">
             {/*  */}
-            <div className={header ? 'fixed left-0 top-0 w-full bg-black p-2 shadow-none z-50' : ' bg-transparent p-2 shadow-lg'}>
+            <div className={header ? 'fixed left-0 top-0 w-full bg-black p-2 shadow-lg z-50' : ' bg-transparent p-2 shadow-none'}>
                 <Container className='p-2'>
                     <Toolbar className='flex justify-between' >
                         {/* logo */}
@@ -98,7 +98,7 @@ const Navigetions = () => {
             {/*  */}
             {
                 menu ?
-                    <div className='sideBar w-full fixed left-0 top-0  z-40'>
+                    <div className='sideBar w-full fixed left-0 top-0  z-[90]'>
                         <div className='bg-gradient-to-b from-[#0F0715] from-0%  to-[#6c3ccb] to-96% w-60 py-4 h-screen'>
                             <div className=" grid justify-items-end gap-8 px-4 py-2 text-xl" onClick={() => setMenu(!menu)}>
                                 <RiCloseLargeFill />
