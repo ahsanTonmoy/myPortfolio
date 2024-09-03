@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -38,11 +38,30 @@ const Navigetions = () => {
             pathName: '/blogs'
         },
     ]
-
     const [menu, setMenu] = useState(false);
+    const [header, setHeader] = useState(false)
+
+    // 
+    const scrollHeader = () => {
+        if (window.scrollY >= 20) {
+            setHeader(true)
+        } else {
+            setHeader(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHeader)
+        return () => {
+            window.addEventListener('scroll', scrollHeader)
+        }
+    }, [])
+
+
     return (
-        <div className="px-2 md:px-16 py-2">
-            <div className=' bg-transparent p-2 shadow-none'>
+        <div className=" py-2">
+            {/*  */}
+            <div className={header ? 'fixed left-0 top-0 w-full bg-black p-2 shadow-none z-50' : ' bg-transparent p-2 shadow-lg'}>
                 <Container className='p-2'>
                     <Toolbar className='flex justify-between' >
                         {/* logo */}
@@ -51,20 +70,20 @@ const Navigetions = () => {
 
                             <Link href={'mailto:ahosant82@gmail.com'} className="py-1 hidden md:block cursor-pointer"> ahosant82@gmail.com</Link>
                         </div>
-
+                        <div className="nav mt-2">
+                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                                <Menu display={'flex'} />
+                            </Box>
+                        </div>
                         {/* get here */}
                         <div className=" flex gap-8">
                             {/* menus */}
 
-                            <div className="nav mt-2">
-                                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                                    <Menu display={'flex'} />
-                                </Box>
-                            </div>
+
                             <Button className='bg-gradient-to-r hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] border-0 hover:border-0 border-[#6c3ccb] text-white font-bold uppercase rounded-full px-8 py-2 hidden lg:block' variant="outlined" href="#outlined-buttons">
                                 hire me!
                             </Button>
-                            
+
                         </div>
 
                         <div className="lg:hidden">
@@ -76,15 +95,16 @@ const Navigetions = () => {
                     </Toolbar>
                 </Container>
             </div>
+            {/*  */}
             {
                 menu ?
                     <div className='sideBar w-full fixed left-0 top-0  z-40'>
                         <div className='bg-gradient-to-b from-[#0F0715] from-0%  to-[#6c3ccb] to-96% w-60 py-4 h-screen'>
-                        <div className=" grid justify-items-end gap-8 px-4 py-2 text-xl" onClick={() => setMenu(!menu)}>
-                        <RiCloseLargeFill />
+                            <div className=" grid justify-items-end gap-8 px-4 py-2 text-xl" onClick={() => setMenu(!menu)}>
+                                <RiCloseLargeFill />
+                            </div>
+                            <Menu display={'grid gap-2 my-4'}></Menu>
                         </div>
-                        <Menu display={'grid gap-2 my-4'}></Menu>
-                    </div>
                     </div>
                     :
                     null
