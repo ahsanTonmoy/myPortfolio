@@ -30,9 +30,9 @@ const Menu = ({display}) => {
     ]
     return (
         <div>
-            <div className={`${display} font-semibold uppercase text-sm`}>
+            <div className={`${display} font-bold uppercase text-base`}>
                 {page.map((page) => (
-                    <Link key={page} className={`${pathName === page.pathName ? 'hover:bg-gradient-to-l bg-gradient-to-r from-[#6c3ccb] to-[#2a1454] lg:rounded-full px-6 py-1 ' : 'hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] lg:rounded-full px-6 lg:py-1 py-2 lg:hover:ml-2'}`} href={page.pathName}>{page.route}</Link>
+                    <Link key={page.id} className={`${pathName === page.pathName ? 'bg-gradient-to-l from-[#7636f8] to-white inline-block text-transparent bg-clip-text px-6 py-1 ' : 'bg-gradient-to-r from-[#7636f8] to-white inline-block hover:text-transparent bg-clip-text px-6 lg:py-1 py-2'}`} href={page.pathName}>{page.route}</Link>
                 ))}
             </div>
         </div>

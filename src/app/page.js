@@ -12,33 +12,19 @@ import { motion } from "framer-motion"
 
 const HomePage = () => {
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1, amount: 0.8 }}
-    viewport={{ once: true }} className='wrepperArea'>
+    <div
+     className='wrepperArea'>
       {/*  */}
       <div className='bgDark'><Myinfo></Myinfo></div>
       {/*  */}
-      <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2.6 }} className='Dark'><MySkills></MySkills></motion.div>
+      <div className='Dark'><MySkills></MySkills></div>
       {/*  */}
-      <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2.6 }}  className='bgDark'><RecentRork></RecentRork></motion.div>
+      <div className='bgDark'><RecentRork></RecentRork></div>
       {/*  */}
-      <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2.6 }} className='Dark'><MyProfile/></motion.div>
+      <div className='Dark'><MyProfile/></div>
       {/*  */}
-      <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2.6 }} className='bgDark'><Contact></Contact></motion.div>
-    </motion.div>
+      <div className='bgDark'><Contact></Contact></div>
+    </div>
   );
 };
 
