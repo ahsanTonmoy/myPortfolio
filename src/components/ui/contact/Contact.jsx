@@ -12,11 +12,11 @@ import Link from 'next/link';
 const Contact = () => {
     return (
         <div>
-            <Container className='Dark rounded-lg p-6'>
+            <Container className='rounded-lg p-6'>
 
                 {/* content */}
                 <Container className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-                    <Box className='bgDark p-4 rounded-sm'>
+                    <Box className='Dark p-4 rounded-sm'>
                         {/*  */}
                         <SectionTitle TitleContent={'Let’s work together!'}></SectionTitle>
 

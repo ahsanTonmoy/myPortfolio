@@ -9,72 +9,66 @@
 bg-gradient-to-r from-[#0F0715] from-0% via-[#2a1439] via-60% to-[#1c1640] to-100%
 */
 
-::-webkit-scrollbar{
-    width: 6px;
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-::-webkit-scrollbar-track{
-    background: #0f0715;
+::-webkit-scrollbar-track {
+  background: #0f0715;
 }
 
-::-webkit-scrollbar-thumb{
-    background: #7636f8;
+::-webkit-scrollbar-thumb {
+  background: #7636f8;
 }
 
-body{
-    font-family: "Sora", sans-serif;
-
+body {
+  font-family: "Sora", sans-serif;
 }
 /*  */
-.sectionTitle{
-    font-family: "Sora", sans-serif;
-
+.sectionTitle {
+  font-family: "Sora", sans-serif;
 }
 /*  */
-.wrepperArea>div {
-    padding: 4rem 0;
+.wrepperArea > div {
+  padding: 4rem 0;
 }
 
-.wrepperArea>.bannar {
-    padding: 0 !important;
+.wrepperArea > .bannar {
+  padding: 0 !important;
 }
-.Dark{
-    background-color: black;
+.Dark {
+  background-color: #0f1117e6;
 }
 .bgDark {
-    background-color: #0f0715;
+  background-color: #0f0715;
 }
 
 .bgDarkBlue {
-    background-color: #2a1454;
-}
-
-
-/*  */
-
-.item .hoverCnt{
-    display: none;
-    
-}
-
-.item:hover .hoverCnt{
-    display: grid;transition: 20s;
-    
+  background-color: #2a1454;
 }
 
 /*  */
 
-.pCard .overlay{
-    display: none;
+.item .hoverCnt {
+  display: none;
 }
 
-.pCard:hover .overlay{
-    display: block;
+.item:hover .hoverCnt {
+  display: grid;
+  transition: 20s;
 }
-
 
 /*  */
-.sideBar{
-    backdrop-filter: blur(30px);
 
+.pCard .overlay {
+  display: none;
+}
+
+.pCard:hover .overlay {
+  display: block;
+}
+
+/*  */
+.sideBar {
+  backdrop-filter: blur(30px);
 }
