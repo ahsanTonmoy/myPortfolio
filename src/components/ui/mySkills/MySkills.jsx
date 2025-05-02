@@ -70,10 +70,10 @@ const MySkills = () => {
         <SectionTitle position={"text-center"} TitleContent={"my skills"} />
 
         <Box className=" ">
-          <Container className=" flex gap-6 flex-wrap justify-evenly">
+          <Container className=" md:flex gap-6 flex-wrap justify-evenly">
             {skills.map((item) => (
               <Box key={item}>
-                <Box className="bg-black p-4 w-40 py-8 grid justify-items-center gap-4 text-3xl rounded-lg hover:scale-110 transition duration-300 ease-in cursor-pointer">
+                <Box className="bg-black p-4 my-4 md:w-40 py-8 grid justify-items-center gap-4 text-3xl rounded-lg hover:scale-110 transition duration-300 ease-in cursor-pointer">
                   <div className="text-4xl">{item.svg}</div>
                   <div className="text-base text-slate-300">{item.persent}</div>
                   <Box className="text-center p-2 font-bold uppercase text-sm">
