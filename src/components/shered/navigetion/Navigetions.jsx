@@ -1,117 +1,137 @@
-"use client"
-import React, { useEffect, useState } from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
+"use client";
+import React, { useEffect, useState } from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
 
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
 
-import AdbIcon from '@mui/icons-material/Adb';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import Menu from '../menu/Menu';
+import AdbIcon from "@mui/icons-material/Adb";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Menu from "../menu/Menu";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { RiCloseLargeFill } from "react-icons/ri";
 const Navigetions = () => {
-    const pathName = usePathname();
-    const page = [
+  const pathName = usePathname();
+  const page = [
+    {
+      route: "home",
+      pathName: "/",
+    },
+    {
+      route: "about",
+      pathName: "/about",
+    },
+    {
+      route: "service",
+      pathName: "/service",
+    },
+    {
+      route: "contact",
+      pathName: "/contact",
+    },
+    {
+      route: "blogs",
+      pathName: "/blogs",
+    },
+  ];
+  const [menu, setMenu] = useState(false);
+  const [header, setHeader] = useState(false);
 
-        {
-            route: 'home',
-            pathName: '/'
-        },
-        {
-            route: 'about',
-            pathName: '/about'
-        },
-        {
-            route: 'service',
-            pathName: '/service'
-        },
-        {
-            route: 'contact',
-            pathName: '/contact'
-        },
-        {
-            route: 'blogs',
-            pathName: '/blogs'
-        },
-    ]
-    const [menu, setMenu] = useState(false);
-    const [header, setHeader] = useState(false)
-
-    // 
-    const scrollHeader = () => {
-        if (window.scrollY >= 20) {
-            setHeader(true)
-        } else {
-            setHeader(false)
-        }
+  //
+  const scrollHeader = () => {
+    if (window.scrollY >= 2) {
+      setHeader(true);
+    } else {
+      setHeader(false);
     }
+  };
 
-    useEffect(() => {
-        window.addEventListener('scroll', scrollHeader)
-        return () => {
-            window.addEventListener('scroll', scrollHeader)
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+    return () => {
+      window.addEventListener("scroll", scrollHeader);
+    };
+  }, []);
+
+  return (
+    <div className=" py-2">
+      {/*  */}
+      <div
+        className={
+          header
+            ? "fixed left-0 top-0 w-full bg-black p-2 shadow-lg z-50"
+            : " bg-transparent p-2 shadow-none"
         }
-    }, [])
+      >
+        <Container className="p-2">
+          <Toolbar className="flex justify-between">
+            {/* logo */}
+            <div className="brand flex gap-5">
+              <AdbIcon
+                sx={{
+                  display: { xs: "", md: "flex" },
+                  mr: 1,
+                  fontSize: "30px",
+                }}
+              />
 
-
-    return (
-        <div className=" py-2">
-            {/*  */}
-            <div className={header ? 'fixed left-0 top-0 w-full bg-black p-2 shadow-lg z-50' : ' bg-transparent p-2 shadow-none'}>
-                <Container className='p-2'>
-                    <Toolbar className='flex justify-between' >
-                        {/* logo */}
-                        <div className="brand flex gap-5">
-                            <AdbIcon sx={{ display: { xs: '', md: 'flex' }, mr: 1, fontSize: '30px' }} />
-
-                            <Link href={'mailto:ahosant82@gmail.com'} className="py-1 hidden md:block cursor-pointer"> ahosant82@gmail.com</Link>
-                        </div>
-                        <div className="nav mt-2">
-                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                                <Menu display={'flex'} />
-                            </Box>
-                        </div>
-                        {/* get here */}
-                        <div className=" flex gap-8">
-                            {/* menus */}
-
-
-                            <Button className='bg-gradient-to-r hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] border-0 hover:border-0 border-[#6c3ccb] text-white font-bold uppercase rounded-full px-8 py-2 hidden lg:block' variant="outlined" href="#outlined-buttons">
-                                hire me!
-                            </Button>
-
-                        </div>
-
-                        <div className="lg:hidden">
-                            <button className=' text-2xl font-extrabold' onClick={() => setMenu(!menu)}><HiOutlineBars3CenterLeft /></button>
-                            {/*  */}
-
-                        </div>
-
-                    </Toolbar>
-                </Container>
+              <Link
+                href={"mailto:ahosant82@gmail.com"}
+                className="py-1 hidden md:block cursor-pointer"
+              >
+                {" "}
+                ahosant82@gmail.com
+              </Link>
             </div>
-            {/*  */}
-            {
-                menu ?
-                    <div className='sideBar w-full fixed left-0 top-0  z-[90]'>
-                        <div className='bg-gradient-to-b from-[#0F0715] from-0%  to-[#6c3ccb] to-96% w-60 py-4 h-screen'>
-                            <div className=" grid justify-items-end gap-8 px-4 py-2 text-xl" onClick={() => setMenu(!menu)}>
-                                <RiCloseLargeFill />
-                            </div>
-                            <Menu display={'grid gap-2 my-4'}></Menu>
-                        </div>
-                    </div>
-                    :
-                    null
-            }
+            <div className="nav mt-2">
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                <Menu display={"flex"} />
+              </Box>
+            </div>
+            {/* get here */}
+            <div className=" flex gap-8">
+              {/* menus */}
 
+              <Button
+                className="bg-gradient-to-r hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] border-0 hover:border-0 border-[#6c3ccb] text-white font-bold uppercase rounded-full px-8 py-2 hidden lg:block"
+                variant="outlined"
+                href="#outlined-buttons"
+              >
+                hire me!
+              </Button>
+            </div>
+
+            <div className="lg:hidden">
+              <button
+                className=" text-2xl font-extrabold"
+                onClick={() => setMenu(!menu)}
+              >
+                <HiOutlineBars3CenterLeft />
+              </button>
+              {/*  */}
+            </div>
+          </Toolbar>
+        </Container>
+      </div>
+      {/*  */}
+      {menu ? (
+        <div className="sideBar w-full fixed left-0 top-0  z-[90]">
+          <div className="bg-gradient-to-b from-[#0F0715] from-0%  to-[#6c3ccb] to-96% w-60 py-4 h-screen">
+            <div
+              className=" grid justify-items-end gap-8 px-4 py-2 text-xl"
+              onClick={() => setMenu(!menu)}
+            >
+              <RiCloseLargeFill />
+            </div>
+            <Menu display={"grid gap-2 my-4"}></Menu>
+          </div>
         </div>
-    );
+      ) : null}
+    </div>
+  );
 };
 
 export default Navigetions;
