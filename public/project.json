@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "6634f8c1a3bfae001e8d9a01",
+    "title": "Bistro Boss Restaurant",
+    "shots": "bistroBoss",
+    "description": "Online food ordering and restaurant booking system.",
+    "link": "https://rms-clint.web.app/",
+    "featured": true,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a02",
+    "title": "Fruit Brust",
+    "shots": "fruitBrust",
+    "description": "An online fruit shop offering the best fresh fruits.",
+    "link": "https://ahosant82.github.io/FruiteBrust/",
+    "featured": false,
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a03",
+    "title": "PH Tube",
+    "shots": "phTube",
+    "description": "An online video-sharing platform.",
+    "link": "https://sensational-fudge-a45baf.netlify.app/",
+    "featured": false,
+    "technologies": ["HTML", "Tailwind CSS", "JavaScript"]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a04",
+    "title": "Game Hunt",
+    "shots": "gameHunt",
+    "description": "An online gaming platform to explore and choose your favorite games.",
+    "link": "https://ahosant82.github.io/TheGameing/",
+    "featured": false,
+    "technologies": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a05",
+    "title": "EduZone LMS",
+    "shots": "eduZone",
+    "description": "A learning management system for online courses and student tracking.",
+    "link": "https://eduzone-lms.web.app/",
+    "featured": true,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "MongoDB"
+    ]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a06",
+    "title": "TravelMate",
+    "shots": "travelMate",
+    "description": "A responsive travel booking platform with location-based services.",
+    "link": "https://travelmate-app.netlify.app/",
+    "featured": false,
+    "technologies": ["Vue.js", "SCSS", "Firebase", "Google Maps API"]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a07",
+    "title": "Task Forge",
+    "shots": "taskForge",
+    "description": "A task management and productivity tracking web app.",
+    "link": "https://taskforge.io/",
+    "featured": false,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "_id": "6634f8c1a3bfae001e8d9a08",
+    "title": "ShopSwift",
+    "shots": "shopSwift",
+    "description": "An eCommerce storefront for electronics with cart and payment integration.",
+    "link": "https://shopswift.store/",
+    "featured": true,
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Stripe API",
+      "MongoDB"
+    ]
+  }
+]
