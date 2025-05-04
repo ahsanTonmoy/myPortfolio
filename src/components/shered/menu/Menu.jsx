@@ -41,7 +41,7 @@ const Menu = ({ display }) => {
             className={`${
               pathName === page.pathName
                 ? "relative pb-1 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gradient-to-l before:from-[#2a1454] before:to-purple-500"
-                : "relative pb-1 hover:before:content-[''] hover:before:absolute hover:before:bottom-0 hover:before:left-0 hover:before:w-full hover:before:h-[2px] hover:before:bg-gradient-to-l hover:before:from-[#2a1454] hover:before:to-purple-500 trans"
+                : "relative pb-1 hover:before:content-[''] hover:before:absolute hover:before:bottom-0 hover:before:left-0 hover:before:w-full hover:before:h-[2px] hover:before:bg-gradient-to-l hover:before:from-[#2a1454] hover:before:to-purple-500 hover:scale-110 transition duration-300 ease-in"
             }`}
             href={page.pathName}
           >

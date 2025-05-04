@@ -97,13 +97,12 @@ const Navigetions = () => {
               <div className=" flex gap-8">
                 {/* menus */}
 
-                <Button
+                <Link
                   className="bg-gradient-to-r hover:bg-gradient-to-l from-[#6c3ccb] to-[#2a1454] border-0 hover:border-0 border-[#6c3ccb] text-white font-bold uppercase rounded-full px-8 py-2 hidden lg:block"
-                  variant="outlined"
                   href="/contact"
                 >
                   hire me!
-                </Button>
+                </Link>
               </div>
             </div>
 

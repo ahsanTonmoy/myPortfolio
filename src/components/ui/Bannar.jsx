@@ -49,7 +49,7 @@ const Bannar = () => {
             >
               <div>
                 <div className="leading-tight font-bold uppercase text-4xl text-[#d9d9d9] ">
-                  hello. I am Tonmoy
+                  hello. ahsanur rahman Tonmoy
                 </div>
               </div>
 

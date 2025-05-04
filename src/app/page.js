@@ -39,7 +39,7 @@ const HomePage = () => {
         <MyProfile />
       </div>
       {/*  */}
-      <div className="bgDark">
+      <div className="">
         <Contact></Contact>
       </div>
     </div>
