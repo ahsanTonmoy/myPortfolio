@@ -16,12 +16,12 @@ const RecentRork = () => {
                 </Box>
 
                 {/* content */}
-                <Box className=' border-[#2a1454] bg-black p-3 md:p-12 rounded-md '>
+                <Box className=' p-3 md:p-12 rounded-md '>
                     <Box className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
                         {
                             projects.map(item => 
                                 <Link href={`/${item.id}`} className='h-[500px] p-4 md:p-10 pb-0 bgDark hover:border border-[#7636f8] rounded-xl relative item cursor-pointer' key={item}>
-                                    <Image className=' ' src={item.image} fill alt={item.title}></Image>
+                                    <Image className='rounded-xl' src={item.image} fill alt={item.title}></Image>
 
                                     <Box className='bg-gradient-to-r from-[#814cec] to-[#2a1454] p-4 rounded-2xl absolute bottom-5 left-4 md:left-5 w-11/12 mx-auto gap-4 grid hoverCnt capitalize'>
                                         <div className="text-2xl font-bold ">{item.title}</div>

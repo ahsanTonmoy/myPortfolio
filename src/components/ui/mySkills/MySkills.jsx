@@ -73,9 +73,9 @@ const MySkills = () => {
           <Container className=" md:flex gap-6 flex-wrap justify-evenly">
             {skills.map((item) => (
               <Box key={item}>
-                <Box className="bg-black p-4 md:m-0 m-8 md:w-40 py-8 grid justify-items-center gap-4 text-3xl rounded-lg hover:scale-110 transition duration-300 ease-in cursor-pointer">
+                <Box className="bg-black p-4 md:m-0 m-8 md:w-40 py-8 grid justify-items-center gap-4 text-3xl rounded-lg hover:bg-white hover:!text-black hover:scale-110 transition duration-300 ease-in cursor-pointer">
                   <div className="text-4xl">{item.svg}</div>
-                  <div className="text-base text-slate-300">{item.persent}</div>
+                  <div className="text-base">{item.persent}</div>
                   <Box className="text-center p-2 font-bold uppercase text-sm">
                     {item.title}
                   </Box>
