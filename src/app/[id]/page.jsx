@@ -69,20 +69,21 @@ const page = ({ params }) => {
           </div>
         </div>
         {/* content */}
-        <div className="relative py-12">
+        <div className="relative my-6">
           <div className="grid md:grid-cols-2 gap-4">
             {/* left side  */}
             <div className=" rounded-lg border border-gray-800 h-96">
               <Image
+                className=" "
                 src={singleItem.image}
                 alt={singleItem.title}
-                className="w-full h-full"
-              />
+                fill
+              ></Image>
             </div>
             {/* right side */}
             <div className=" text-white p-6">
               {/*  */}
-              
+
               {/*  */}
               <div className="prose prose-invert ">
                 {/* <div className=" capitalize  text-gray-400 text-base ">
@@ -100,25 +101,27 @@ const page = ({ params }) => {
                   ))}
                 </ul>
                 <div className="">
-                <div className="bg-dark-surface border-gray-800 overflow-hidden">
-                  <div className="p-6">
-                    <div className="space-y-1">
-                      <div>
-                        <p className="text-gray-400 text-sm">Category</p>
-                        <p className="text-white">{singleItem.category}</p>
-                      </div>
-                      <div>
-                        <p className="text-gray-400 text-sm">Completed</p>
-                        <p className="text-white">{singleItem.completedDate}</p>
-                      </div>
-                      <div>
-                        <p className="text-gray-400 text-sm">Role</p>
-                        <p className="text-white">{singleItem.role}</p>
+                  <div className="bg-dark-surface border-gray-800 overflow-hidden">
+                    <div className="p-6">
+                      <div className="space-y-1">
+                        <div>
+                          <p className="text-gray-400 text-sm">Category</p>
+                          <p className="text-white">{singleItem.category}</p>
+                        </div>
+                        <div>
+                          <p className="text-gray-400 text-sm">Completed</p>
+                          <p className="text-white">
+                            {singleItem.completedDate}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-gray-400 text-sm">Role</p>
+                          <p className="text-white">{singleItem.role}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
