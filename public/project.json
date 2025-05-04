@@ -2,7 +2,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a01",
     "title": "Bistro Boss Restaurant",
-    "shots": "bistroBoss",
+    "shots": "https://i.ibb.co/wh3jVtNk/bistro-Boss.png",
     "description": "Online food ordering and restaurant booking system.",
     "link": "https://rms-clint.web.app/",
     "featured": true,
@@ -19,7 +19,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a02",
     "title": "Fruit Brust",
-    "shots": "fruitBrust",
+    "shots": "https://i.ibb.co/QF9kGnwH/fruit-brust.jpg",
     "description": "An online fruit shop offering the best fresh fruits.",
     "link": "https://ahosant82.github.io/FruiteBrust/",
     "featured": false,
@@ -28,7 +28,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a03",
     "title": "PH Tube",
-    "shots": "phTube",
+    "shots": "https://i.ibb.co/gMZBLv5J/ph-tube.jpg",
     "description": "An online video-sharing platform.",
     "link": "https://sensational-fudge-a45baf.netlify.app/",
     "featured": false,
@@ -37,7 +37,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a04",
     "title": "Game Hunt",
-    "shots": "gameHunt",
+    "shots": "https://i.ibb.co/0yWwZFbW/game-hunting.jpg",
     "description": "An online gaming platform to explore and choose your favorite games.",
     "link": "https://ahosant82.github.io/TheGameing/",
     "featured": false,
@@ -46,7 +46,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a05",
     "title": "EduZone LMS",
-    "shots": "eduZone",
+    "shots": "https://i.ibb.co/d0QJ6FB9/donestion-cemp.jpg",
     "description": "A learning management system for online courses and student tracking.",
     "link": "https://eduzone-lms.web.app/",
     "featured": true,
@@ -61,7 +61,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a06",
     "title": "TravelMate",
-    "shots": "travelMate",
+    "shots": "https://i.ibb.co/d0QJ6FB9/donestion-cemp.jpg",
     "description": "A responsive travel booking platform with location-based services.",
     "link": "https://travelmate-app.netlify.app/",
     "featured": false,
@@ -70,7 +70,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a07",
     "title": "Task Forge",
-    "shots": "taskForge",
+    "shots": "https://i.ibb.co/d0QJ6FB9/donestion-cemp.jpg",
     "description": "A task management and productivity tracking web app.",
     "link": "https://taskforge.io/",
     "featured": false,
@@ -86,7 +86,7 @@
   {
     "_id": "6634f8c1a3bfae001e8d9a08",
     "title": "ShopSwift",
-    "shots": "shopSwift",
+    "shots": "https://i.ibb.co/d0QJ6FB9/donestion-cemp.jpg",
     "description": "An eCommerce storefront for electronics with cart and payment integration.",
     "link": "https://shopswift.store/",
     "featured": true,
