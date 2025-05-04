@@ -72,12 +72,12 @@ const page = ({ params }) => {
         <div className="relative my-6">
           <div className="grid md:grid-cols-2 gap-4">
             {/* left side  */}
-            <div className=" rounded-lg border border-gray-800 h-96">
+            <div className=" rounded-lg border border-gray-800 ">
               <Image
                 className=" "
                 src={singleItem.image}
                 alt={singleItem.title}
-                fill
+                width={600}
               ></Image>
             </div>
             {/* right side */}
