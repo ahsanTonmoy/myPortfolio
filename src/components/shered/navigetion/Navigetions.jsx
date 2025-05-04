@@ -62,7 +62,7 @@ const Navigetions = () => {
       <div
         className={
           header
-            ? "fixed left-0 top-0 w-full bg-black p-2 shadow-lg z-50"
+            ? "fixed left-0 top-0 w-full Dark p-2 shadow-lg z-50"
             : " bg-transparent p-2 shadow-none"
         }
       >

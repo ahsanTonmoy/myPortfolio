@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="bg-[#0F0715] min-h-screen text-white">
           <Navigetions />
-          <div className="min-h-screen bg-black">{children}</div>
+          <div className="min-h-screen Dark">{children}</div>
           <Footer></Footer>
         </div>
       </body>
