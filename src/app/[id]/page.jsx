@@ -13,7 +13,7 @@ const page = ({ params }) => {
   const singleItem = projects.find((item) => item.id === id);
   return (
     <div>
-      <div className="bgDark px-4 md:px-20">
+      <div className="Dark px-4 md:px-20">
         {/* indecetor */}
         <div className="py-6">
           <div className=" flex gap-2 text-xs capitalize text-gray-300">
